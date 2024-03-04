@@ -1,14 +1,11 @@
-# Enter Your password
+number = 10
 
-password = input("Enter your password : ")
+is_prime = True
 
-if(len(password) == 0):
-    print("Please Enter a Password")
-    exit()
-
-if len(password) >= 11:
-    print("Strong Password")
-elif len(password) >= 6:
-    print("Medium Password")
-else:
-    print("WeaK Password")
+if(number > 1):
+    for i in range(2, number):
+        if (number % i) == 0:
+            is_prime = False
+            break
+        
+print(f"{number} is a prime number")

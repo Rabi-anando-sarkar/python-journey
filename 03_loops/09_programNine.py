@@ -1,11 +1,10 @@
-# Enter your year
+items = ["apple", "banana", "orange", "apple", "mango"]
 
-year = int(input("Enter your Year : "))
+unique_item = set()
 
-# check if its a leap year or not
-
-if(year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
-    print(f"Yes,{year} is Leap year")
-else:
-    print(f"{year} is not a Leap year")
-    
+for item in items:
+    if item in unique_item:
+        print(f"Duplicate Item : {item}")
+        break
+    unique_item.add(item)
+        

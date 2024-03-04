@@ -1,19 +1,11 @@
-# Enter your pet 
+import time
 
-pet = str(input("Is your Pet a Cat or a Dog : "))
-age = int(input("Enter Your Pet's age : "))
+wait_time = 1
+max_retries = 5
+attempts = 0
 
-# food distribution
-
-if(pet == "Cat"):
-    if(age > 5):
-        print("Senior Cat Food is Recommended For Your Cat")
-    else:
-        print("Junior Cat Food is Recommended For Your Cat")
-elif(pet == "Dog"):
-    if(age > 2):
-        print("Senior Dog Food is Recommended For Your Dog")
-    else:
-        print("Junior Dog Food is Recommended For Your Dog")
-else:
-    print("Please Enter a Valid Pet.")
+while attempts < max_retries:
+    print(f"Your Attempts : {attempts} and Your Wait Time : {wait_time}")
+    time.sleep(wait_time)
+    wait_time *= 2
+    attempts += 1

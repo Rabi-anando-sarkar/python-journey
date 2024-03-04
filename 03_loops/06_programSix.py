@@ -1,16 +1,8 @@
-# Enter distance
+number = 5
+factorial = 1
 
-distance = float(input("Enter Distance : "))
+while number > 0:
+    factorial *= number
+    number -= 1
 
-# Conditions to check mode of transport
-
-if distance < 0 or distance > 100:
-    print("Please Enter a Valid Distance")
-    exit()
-
-if distance > 15:
-    print("Looks like we need a Car")
-elif distance > 3:
-    print("Oh we can Take our Bike")
-else:
-    print("We should Walk.")
+print(f"Factorial value of num {number} is {factorial}")    

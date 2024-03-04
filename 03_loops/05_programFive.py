@@ -1,14 +1,6 @@
-# Take input of the weather
+input_string = 'aabbccddeffgghh'
 
-weather = str(input("Enter Your Weather : "))
-
-# Conditions 
-
-if weather == "Sunny":
-    print("Go for a walk")
-elif weather == "Rainy":
-    print("Read a book")
-elif weather == "Snowy":
-    print("Build a Snowman")
-else: 
-    print("Enter a correct Weather")
+for char in input_string:
+    if(input_string.count(char) == 1):
+        print(f"Char {char} is repeated only one time.")
+        break

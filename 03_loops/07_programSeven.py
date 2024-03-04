@@ -1,11 +1,7 @@
-# take input 
-
-order_size = str(input("Enter Your Order Size : "))
-extra_shot = str(input("Extra Shots YES or NO : "))
-
-# conditionals
-
-if extra_shot == "YES":
-    print(f"{order_size} coffee with an extra shot")
-else:
-    print(f"{order_size} coffee")
+while True:
+    number = int(input("Enter a number Between 1 and 10 : "))
+    if 1 <= number <= 10:
+        print(f"Thank Your Number is : {number}")
+        break
+    else:
+        print(f"{number} is a an Invalid Number Try Again")
